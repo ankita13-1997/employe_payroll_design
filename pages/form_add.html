@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="device-width, initial-scale=1.0">
+   
+     <link rel ="stylesheet" href="../css/styling_formEmployee.css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;600&display=swap' rel='stylesheet'>
+
+     <title>EMLOYEE PAYROLL APP</title>
+
+
+
+
+
+
+     
+
+ </head>
+
+ <body>
+    <header class="header-content  header ">
+        <div class="logo-content">
+           <img src="../assets/logo.jpg" alt="the image is not prsent">
+               <div>
+                   <span class="emp-txt">EMPLOYEE</span><br>
+                   <span class="emp-txt emp-payroll">PAYROLL</span>
+               </div>
+        </div>
+      
+       
+   
+    </header> 
+
+   <!-----UC2----->
+    <div class="main-content">
+        <div class =header-content1>
+            <div class="emp-detail-text">
+                EMPLOYEE DETAILS <div class="emp-count"></div>
+            </div>
+            <a href="../pages/form.html" class="ads-button">ADD USER</a>
+
+        </div>
+
+    </div>
+
+    <!--------UC3------->
+
+    <table id="display" class="table">
+
+        <tr>
+            <th></th>
+            <th>NAME</th>
+            <th>GENDER</th>
+            <th>DEPARTMENT</th>
+            <th>SALARY</th>
+            <th>START DATE</th>
+            <th>ACTION</th>
+
+        </tr>
+      <tr>
+        <td>
+            <img class="profile" alt="" src="../assets/formal1.jpg">
+
+        </td>
+
+        <td>NARAYAN MADHAVAN </td>
+        <td>MALE</td>
+         <td>
+             <div class="dept-label">HR</div>
+             <div class="dept-label">FINANCE</div>
+        </td>
+        
+        <td>70000</td>
+        <td>1 NOVEMBER 2020</td>
+         <td>
+             <img id="1" onclick="remove(this)" alt="delete">
+             <img id="1" onclick="update(this)" alt="delete">
+         </td>
+       
+     </tr> 
+
+     </table>   
+ </body>
+
+ </html>
