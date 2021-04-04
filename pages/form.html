@@ -23,15 +23,16 @@
 
  </header> 
  
- <div class="form-content">
+ <div id="formId" class="form-content">
 
-    <form class="form" action="#" onsubmit="save();return false">
+    <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
         <div class="form-head">EMPLOYEE PAYROLL FORM</div>
 
 
          <div class="row-content">
              <label class="label text" for="name">NAME</label>
              <input class="input" type="text" id="name" name="name" placeholder="place enter your name">
+             <error-output class="text-error" for="text"></error-output>
 
             
          </div>  
@@ -169,7 +170,7 @@
 
               </select>
              </div>
-
+             <error-output class="date-error" for="startDate"></error-output>
 
 
         </div>   
@@ -202,7 +203,9 @@
 
         </div>
     </form> 
- </div>
- <script src ="../js/body_script.js"></script> 
+ 
+ <script defer type="text/javascript"  src ="../js/body_script.js"></script> 
+ <script defer type="text/javascript"  src ="../js/bodyScript_emp.js"></script> 
+
 </body>
 </html>
